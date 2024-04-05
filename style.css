@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Clash Grotesk', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#index {
+    background-color: #fdf5e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#card {
+    background-color: white;
+    width: 320px;   
+    height: 500px;
+    border-radius: 8px;
+    animation: home-delay 1s linear ;
+}
+
+#card img {
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    height: 85%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#product{
+    padding: 10px;
+
+}
+
+#product #product-details {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#product  h4{
+    font-size: 17px;
+    font-weight: 400;
+    
+}
+
+#product-details img {
+    width: 24px;
+    height: 24px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+#images {
+    width: 946px;
+
+}
+
+#main {
+    position: relative;
+}
+
+#fixed{
+    width: 474px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+#images .img {
+    margin: 1px;
+}
+
+#images .img.row1,.img.row2{
+    width: 473px;
+    height: 622px;
+}
+
+#images .img.row3{
+    width: 314px;
+    height: 440px;
+}
+
+#main #images .img-container-1,.img-container-2,.img-container-3{
+    display: flex;
+    cursor: zoom-in;
+}
+
+#fixed #product-description {
+    margin: 53px;
+
+}
+
+#fixed #product-description #name-and-price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+#fixed #product-description #name-and-price h4 {
+    font-weight: 500;
+}
+
+#fixed #product-description #ref {
+    color: silver;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+#fixed #product-description #color{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    align-items: baseline;
+}
+#fixed #product-description #color span{
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    outline: 1px solid black;
+    outline-offset: 1px;
+    cursor: pointer;
+}
+
+#fixed #product-description #color h6{
+    color: silver;
+    font-weight: 400;
+}
+
+
+#size-chart h5{
+    display: inline;
+    font-weight: 500;
+    font-size: 13px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+#size-chart div {
+    width: 100%;
+    height: 34px;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-top: 14px;
+}
+
+#size-chart div h6{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 9px 4px;
+    cursor: pointer;
+}
+
+#size-chart div h6:hover{
+    background-color: #eaecf1;
+}
+
+#size-chart .chart-open {
+    overflow: visible;
+    height: 242px;
+
+}
+
+#size-chart {
+    position: relative;
+}
+
+.fa-chevron-down {
+    position: absolute;
+    top: 39px;
+    right: 7px;
+}
+
+#size-chart.size-open{
+    overflow: visible;
+    width: 100%;
+    display: block;
+}
+
+#add-shop {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 55px;
+    cursor: pointer;
+}
+
+#add-shop #shop {
+    width: 83%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33px;
+    color: white;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#add-shop #shop:hover{
+    background-color: #5c5c53;
+}
+
+#add-shop #icon:hover{
+    background-color: #5c5c53;
+}
+
+
+#add-shop div h4 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#add-shop #icon {
+    margin-left: 5px;
+    width: 13%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 39px;
+    color: white;
+    
+}
+
+#delivery-store,
+#share-product
+,#time-icon,
+#shirt-icon,
+#location-icon,
+#share-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+#time-icon,
+#shirt-icon,
+#location-icon,
+#share-icon{
+    gap: 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#time-icon,
+#shirt-icon,
+#location-icon,
+#share-icon,h5{
+    font-weight: 100;
+}
+
+#time-icon
+h5:hover {
+    color: silver;
+}
+#shirt-icon
+h5:hover {
+    color: silver;
+}
+
+#location-icon
+h5:hover {
+    color: silver;
+}
+
+#share-icon
+h5:hover {
+    color: silver;
+}
+
+#share-product {
+    margin-top: 40px;
+}
+
+.fa-message {
+    font-size: 20px;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    border: 1px solid silver;
+    padding: 10px;
+    border-radius: 50%;
+}
+@keyframes home-delay {
+
+    0%{
+        opacity: 0;
+        transform: translateY(80px)
+    }
+    30%{
+        opacity: 0.1;
+        transform: translateY(50px)
+    }
+    60%{
+        opacity: 0.8;
+        transform: translateY(25px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+
+    
+}
