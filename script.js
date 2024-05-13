@@ -1,4 +1,9 @@
+const sizeChart = document.querySelector('#char-list')
+const icon = document.querySelector('.fa-chevron-down')
+const sizeAssign = document.querySelector('#char-list')
+const openChart = document.querySelector('#openChart')
 const image = document.getElementById("main-img")
+let swapVar;
 
 try{
     image.addEventListener('mouseover', () => {
@@ -13,15 +18,6 @@ try{
     console.log(err)
 }
     
-
-
-const sizeChart = document.querySelector('#char-list')
-const icon = document.querySelector('.fa-chevron-down')
-const sizeAssign = document.querySelector('#char-list')
-const openChart = document.querySelector('#openChart')
-let swapVar;
-
-
 sizeChart.addEventListener('click',openBox)
 openChart.addEventListener('click',openBox)
 
@@ -44,6 +40,10 @@ function openBox(event) {
     }
    
 }
+
+
+
+
 
 
 
